@@ -106,6 +106,7 @@ RUN \
     certbot-dns-cpanel \
     certbot-dns-desec \
     certbot-dns-digitalocean \
+    certbot-dns-dinahosting \
     certbot-dns-directadmin \
     certbot-dns-dnsimple \
     certbot-dns-dnsmadeeasy \
