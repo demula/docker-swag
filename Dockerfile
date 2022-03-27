@@ -106,7 +106,6 @@ RUN \
     certbot-dns-cpanel \
     certbot-dns-desec \
     certbot-dns-digitalocean \
-    certbot-dns-dinahosting \
     certbot-dns-directadmin \
     certbot-dns-dnsimple \
     certbot-dns-dnsmadeeasy \
@@ -132,6 +131,8 @@ RUN \
     certbot-plugin-gandi \
     cryptography \
     requests && \
+  echo "**** install certbot-dns-dinahosting ****" && \
+  pip3 install https://github.com/demula/certbot-dns-dinahosting/tarball/1.25.0 && \
   echo "**** correct ip6tables legacy issue ****" && \
   rm \ 
     /sbin/ip6tables && \
